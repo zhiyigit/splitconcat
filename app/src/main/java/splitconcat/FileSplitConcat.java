@@ -34,6 +34,8 @@ public class FileSplitConcat {
       Path filePath = Paths.get(filename);
       if (Files.exists(filePath)) {
         filenames.add(filename);
+      } else {
+        break;
       }
     }
 
